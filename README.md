@@ -1,5 +1,5 @@
 
-# Convert dict/list/nested to PHP Array like urlencoded string
+# Convert python dict/list/nested to PHP Array like urlencoded string
 
 
 ## Install
