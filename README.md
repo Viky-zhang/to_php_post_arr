@@ -2,6 +2,13 @@
 # Convert dict/list/nested to PHP Array like urlencoded string
 
 
+## Install
+
+```sh
+pip install to_php_post_arr
+```
+
+
 ## Usage
 
 
