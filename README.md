@@ -44,6 +44,10 @@ e = {'a': 11, 'b': [1, {'c': 123}, [3, 'foo']]}
 print(recursive_urlencode(e))
 # a=11&b[0]=1&b[1][c]=123&b[2][0]=3&b[2][1]=foo
 
+f = ['测试中文']
+print(recursive_urlencode(f))
+# 0=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87
+
 ```
 
 ## PHP urlencoded Array Data

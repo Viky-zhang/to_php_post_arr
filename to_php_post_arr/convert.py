@@ -10,8 +10,10 @@ def _need_loop(v):
     """
     return isinstance(v, list) or isinstance(v, dict) or isinstance(v, tuple)
 
+
 def _unicode_utf8(s):
     return unicode(str(s), 'utf-8').encode('utf8')
+
 
 def recursive_urlencode(d):
     """
@@ -54,7 +56,7 @@ def recursive_urlencode(d):
         if isinstance(d, dict):
             for key, value in d.items():
                 pairs += add_item_str(key, value, base)
-        elif isinstance(d, list) or isinstance(d, tuple):
+        elif isinstance(d, (list, tuple)):
             for key, value in enumerate(d):
                 pairs += add_item_str(key, value, base)
         return pairs
