@@ -10,6 +10,8 @@ def _need_loop(v):
     """
     return isinstance(v, list) or isinstance(v, dict) or isinstance(v, tuple)
 
+def _unicode_utf8(s):
+    return unicode(str(s), 'utf-8').encode('utf8')
 
 def recursive_urlencode(d):
     """
@@ -39,10 +41,10 @@ def recursive_urlencode(d):
                 new_pair = "%s[%s]=%s" % (
                     first,
                     ']['.join((str(x) for x in rest)),
-                    urllib.quote(unicode(value))
+                    urllib.quote(_unicode_utf8(value))
                 )
             else:
-                new_pair = "%s=%s" % (urllib.quote(unicode(key)), urllib.quote(unicode(value)))
+                new_pair = "%s=%s" % (urllib.quote(_unicode_utf8(key)), urllib.quote(_unicode_utf8(value)))
             pairs.append(new_pair)
         return pairs
 
