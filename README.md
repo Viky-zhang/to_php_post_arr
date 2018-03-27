@@ -46,6 +46,7 @@ print(recursive_urlencode(e))
 
 f = ['测试中文']
 print(recursive_urlencode(f))
+# test chinese 
 # 0=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87
 
 ```
