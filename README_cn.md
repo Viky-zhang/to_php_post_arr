@@ -1,5 +1,6 @@
 
-# 转换 python 的 dict/list/nested 类型数据（含互相嵌套）到 PHP 能识别的 HTTP 参数（urlencoded）
+# 概述
+转换 python 的 dict/list/nested 类型数据（含互相嵌套）到 PHP 能识别的 HTTP 数组参数（urlencoded）
 
 
 ## 安装
