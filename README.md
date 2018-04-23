@@ -1,6 +1,8 @@
 
 # Convert python dict/list/nested to PHP Array like urlencoded string
 
+> [中文说明](https://github.com/vikyd/to_php_post_arr/blob/master/README_cn.md)
+
 
 ## Install
 
