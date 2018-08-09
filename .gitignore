@@ -1,4 +1,5 @@
-!.idea/
-!dist/
-!.vscode/
-!*.pyc
+.idea/
+dist/
+.vscode/
+to_php_post_arr.egg-info/
+*.pyc

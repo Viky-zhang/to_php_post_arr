@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='to_php_post_arr',
-    version='0.0.1',
+    version='0.0.2',
     description='Convert python dict/list/nested to PHP Array like urlencoded string',
     url='https://github.com/Viky-zhang/to_php_post_arr',
     author='VikyZhang',
